@@ -40,6 +40,7 @@ BURSA_SENTINEL/
 ├── .env.example          # Template for Gemini API keys
 ├── .gitignore            # Git exclusion rules
 └── README.md             # Project documentation monitors tool outputs in real-time to bridge the gap between Python's data processing and Flutter's UI requirements.
+```
 🛠️ Setup Instructions
 1. Prerequisites
 Flutter SDK (Stable)
