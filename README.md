@@ -39,4 +39,37 @@ BURSA_SENTINEL/
 │   └── requirements.txt  # Python dependencies
 ├── .env.example          # Template for Gemini API keys
 ├── .gitignore            # Git exclusion rules
-└── README.md             # Project documentation monitors tool outputs in real-time to bridge the gap between Python's data processing and Flutter's UI requirements.Developed by Chong Tang Jing (OwenChong888) | Electronic Engineering @ Universiti Teknologi Malaysia (UTM)
+└── README.md             # Project documentation monitors tool outputs in real-time to bridge the gap between Python's data processing and Flutter's UI requirements.
+🛠️ Setup Instructions
+1. Prerequisites
+Flutter SDK (Stable)
+
+Python 3.10+
+
+Google Gemini API Key
+
+2. Backend Installation
+Bash
+cd server
+python -m venv venv
+# Windows:
+.\venv\Scripts\activate
+# Mac/Linux:
+# source venv/bin/activate
+
+pip install -r requirements.txt
+# Create a .env file and add your GEMINI_API_KEY
+python server.py
+3. Frontend Installation
+Bash
+cd app
+flutter pub get
+flutter run -d chrome
+🛡️ Technical Resilience
+Quota Management: Implemented intelligent fallback logic to handle 429 RESOURCE_EXHAUSTED errors during high-traffic periods.
+
+Data Grounding: Reports are grounded in real-time Yahoo Finance headlines with direct source links to prevent hallucinations.
+
+A2A Observability: The server monitors tool outputs in real-time to bridge the gap between Python's data processing and Flutter's UI requirements.
+
+Developed by Chong Tang Jing (OwenChong888) | Electronic Engineering @ Universiti Teknologi Malaysia (UTM)
