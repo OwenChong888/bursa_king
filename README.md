@@ -41,31 +41,41 @@ BURSA_SENTINEL/
 ├── .gitignore            # Git exclusion rules
 └── README.md             # Project documentation monitors tool outputs in real-time to bridge the gap between Python's data processing and Flutter's UI requirements.
 ```
-🛠️ Setup Instructions
-1. Prerequisites
-Flutter SDK (Stable)
+## 🛠️ Setup Instructions
 
-Python 3.10+
+### 1. Prerequisites
+* **Flutter SDK** (Stable Channel)
+* **Python 3.10+**
+* **Google Gemini API Key**
 
-Google Gemini API Key
-
-2. Backend Installation
-Bash
+### 2. Backend Installation
+```bash
+# Navigate to server folder
 cd server
-python -m venv venv
-# Windows:
-.\venv\Scripts\activate
-# Mac/Linux:
-# source venv/bin/activate
 
+# Create and activate virtual environment
+python -m venv venv
+
+# Activate on Windows:
+.\venv\Scripts\activate
+
+# Install requirements
 pip install -r requirements.txt
-# Create a .env file and add your GEMINI_API_KEY
+
+# Start the server (Ensure .env is created with GEMINI_API_KEY)
 python server.py
-3. Frontend Installation
-Bash
+```
+
+### 2. Frontend Installation
+```bash
+# Navigate to app folder
 cd app
+
+# Fetch dependencies
 flutter pub get
-flutter run -d chrome
+
+# Run the application
+```
 🛡️ Technical Resilience
 Quota Management: Implemented intelligent fallback logic to handle 429 RESOURCE_EXHAUSTED errors during high-traffic periods.
 
