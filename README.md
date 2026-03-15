@@ -83,4 +83,6 @@ Data Grounding: Reports are grounded in real-time Yahoo Finance headlines with d
 
 A2A Observability: The server monitors tool outputs in real-time to bridge the gap between Python's data processing and Flutter's UI requirements.
 
+https://github.com/OwenChong888/bursa_king/blob/576af9ff7c9f23cf0736af054a299b254194db22/mind_map.png
+
 Developed by Chong Tang Jing (OwenChong888) | Electronic Engineering @ Universiti Teknologi Malaysia (UTM)
